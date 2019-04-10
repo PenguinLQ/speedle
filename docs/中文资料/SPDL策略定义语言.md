@@ -77,7 +77,7 @@ Policy和role policy都支持Condition。只有condition满足了， policy或ro
 
 ### 2. Condition
 
-Condition就是一个布尔表达式。由属性(attributes), 函数(functions), 常量(constants), 操作符(operators), 比较运算符(comparators) or 括号(parenthesis)构建的布尔表达式。
+Condition就是一个布尔表达式。由属性(attributes), 函数(functions), 常量(constants), 运算操作符(operators), 比较操作符(comparators) or 括号(parenthesis)构建的布尔表达式。
 
 #### 2.1 数据类型 （Data Types）
 
@@ -88,8 +88,8 @@ Condition就是一个布尔表达式。由属性(attributes), 函数(functions),
     <thead>
       <tr>
         <th>数据类型<br>Data Type</th>
-        <th>操作符<br>Operators</th>
-        <th>比较运算符<br>Comparators</th>
+        <th>运算操作符<br>Operators</th>
+        <th>比较操作符<br>Comparators</th>
         <th>备注<br>Comment</th>
       </tr>
     </thead>
@@ -364,7 +364,7 @@ Speedle提供以下内置函数：
 用户可以向Speedle暴露自己定义的函数, 并将自定义函数用于condition.  
 更多细节, 参见 [custom function](../custom-function/).
 
-#### 2.5 运算比较操作符的优先级(operator/Comparator Precedence)
+#### 2.5 运算/比较操作符的优先级(operator/Comparator Precedence)
 
 ##### 2.5.1 优先顺序(Precedence order)
 
@@ -374,7 +374,7 @@ Speedle提供以下内置函数：
 
 当表达式具有两个具有相同优先级的运算符时，将根据其关联性来计算表达式。 `72/2/3`被视为`（72/2）/ 3`，因为`/`运算符具有从左到右的关联性。 有些运算符不是关联的：例如，表达式`（x <= y <= z）`和`x ++  - `无效。
 
-##### 2.5.3 Precedence and Associativity of Supported Operators and Comparators
+##### 2.5.3 运算/比较操作符的优先顺序及关联
 
 下表按优先级列出了所有运算和比较操作符及其关联性.
 
